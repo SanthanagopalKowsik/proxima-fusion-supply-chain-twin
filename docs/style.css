@@ -78,7 +78,7 @@ select { background: var(--surface); border: 1px solid var(--border); border-rad
 .sub { color: var(--ink-2); margin: 0 0 22px; }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; position: relative; margin-bottom: 16px; }
 .card h2 { font: 600 15px var(--sans); margin: 0 0 10px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 16px; }
 .grid .card { margin-bottom: 0; }
 .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; color: var(--ink-2); font-size: 13px; margin-bottom: 6px; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
