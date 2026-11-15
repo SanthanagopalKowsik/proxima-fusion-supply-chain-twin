@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proxima Fusion · Supply Chain Twin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">Supply Chain Twin</div>
+    <select id="case-select" aria-label="Case"></select>
+    <select id="view-select" aria-label="Page"></select>
+    <div id="views"></div>
+    <div class="label">Cases</div>
+    <div id="cases"></div>
+    <div class="side-foot">
+      <button id="open-settings" aria-label="Settings"><span class="gear" aria-hidden="true">&#9881;</span><span class="word">Settings</span></button>
+      <p class="tiny">Illustrative portfolio case built on synthetic data. Not affiliated with or endorsed by Proxima Fusion.</p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Control tower: what needs attention, ranked -->
+    <section id="view-tower" hidden><div class="col wide">
+      <div class="eyebrow" id="t-eyebrow"></div>
+      <p class="headline" id="t-headline"></p>
+      <p class="sub" id="t-sub"></p>
+      <div class="card"><h2>Needs attention</h2><div id="t-alerts"></div></div>
+      <div class="card chart-card"><h2>Timeline</h2>
+        <div class="legend"><span><i class="sw" style="background:var(--driver)"></i>Decides the delivery date</span><span><i class="sw" style="background:var(--slack)"></i>Has slack</span></div>
+        <svg role="img"></svg><div class="tip"></div></div>
+      <div class="grid">
+        <div class="card"><h2>What decides the date</h2><div id="t-drivers"></div></div>
+        <div class="card"><h2>Decisions applied to the plan</h2><div id="t-log"></div></div>
+      </div>
+    </div></section>
+
+    <!-- Explorer: one page per object -->
+    <section id="view-explore" hidden><div class="col wide" id="explore"></div></section>
+
+    <!-- Scenarios: try, compare, then apply -->
+    <section id="view-scenarios" hidden><div class="col wide">
+      <div class="eyebrow" id="s-eyebrow"></div>
+      <p class="headline">Scenarios</p>
+      <p class="sub">A scenario is a sandbox: actions tried on a copy of the plan. Nothing changes until you apply it.</p>
+      <div class="card"><h2>Working scenario</h2><div id="s-draft"></div></div>
+      <div class="card"><h2>Compare</h2><div class="scroll"><table id="s-table"></table></div></div>
+      <div class="card chart-card"><h2 id="s-chart-title">Timeline</h2>
+        <div class="legend"><span><i class="sw" style="background:var(--driver)"></i>Decides the delivery date</span><span><i class="sw" style="background:var(--slack)"></i>Has slack</span></div>
+        <svg role="img"></svg><div class="tip"></div></div>
+    </div></section>
+
+    <!-- Support: keeping the delivered product working (S-Series IPS / ILS) -->
+    <section id="view-support" hidden><div class="col wide" id="support"></div></section>
+
+    <!-- Assistant: reads, computes, proposes -->
+    <section id="view-chat" hidden>
+      <div class="col thread" id="thread" aria-live="polite"></div>
+      <div class="col composer">
+        <form class="box" id="ask">
+          <textarea id="q" rows="1" placeholder="Ask about delivery, delays or suppliers" aria-label="Your question"></textarea>
+          <button class="send" id="send" aria-label="Send" disabled>&uarr;</button>
+        </form>
+        <p class="engine" id="engine"></p>
+      </div>
+    </section>
+
+    <!-- Model: how it is organised and how far to trust it -->
+    <section id="view-model" hidden><div class="col wide" id="model"></div></section>
+  </main>
+</div>
+
+<dialog id="settings">
+  <h2>Settings</h2>
+  <p>The assistant is a built-in engine that runs entirely in your browser. To hold a free-form conversation instead, add your own Anthropic API key and Claude will answer, using the same objects, functions and actions.</p>
+  <p>The key is stored only in this browser and sent only to api.anthropic.com. Anyone who can use this browser profile can read it, so prefer a key with a spend limit. Each question costs a small amount.</p>
+  <input id="key" type="password" autocomplete="off" placeholder="Anthropic API key" aria-label="Anthropic API key">
+  <div class="actions">
+    <button id="key-remove">Remove key</button>
+    <button id="key-cancel">Cancel</button>
+    <button id="key-save" class="primary">Save</button>
+  </div>
+</dialog>
+
+<script src="data/model.js"></script>
+<script src="data/proxima.js"></script>
+<script src="engine.js"></script>
+<script src="plan.js"></script>
+<script src="support.js"></script>
+<script src="chat.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

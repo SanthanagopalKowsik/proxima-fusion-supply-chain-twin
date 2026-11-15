@@ -1,0 +1,2225 @@
+{
+ "id": "proxima",
+ "company": "Proxima Fusion",
+ "sector": "Fusion energy",
+ "title": "HTS stellarator model coil",
+ "blurb": "A first-of-a-kind high-temperature superconducting demonstration magnet: long-lead superconductor tape, precision coil casing, cryostat, power and protection systems, ending in a cold test campaign.",
+ "start_date": "2027-01-11",
+ "disclaimer": "Illustrative case. Site footprint follows public information; suppliers are anonymised and all durations and performance data are synthetic. Not affiliated with or endorsed by the company.",
+ "qualification_days": 45,
+ "order_sigma": 0.2,
+ "parties": [
+  {
+   "id": "PRX-SITE",
+   "name": "Proxima Fusion integration hall (Germany)",
+   "region": "domestic",
+   "distance_km": 0,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-HTS-A",
+   "name": "HTS tape supplier A (East Asia)",
+   "region": "overseas",
+   "distance_km": 9000,
+   "mode": "air"
+  },
+  {
+   "id": "PRX-HTS-B",
+   "name": "HTS tape supplier B (Europe)",
+   "region": "regional",
+   "distance_km": 800,
+   "mode": "road",
+   "lead_factor": 1.15
+  },
+  {
+   "id": "PRX-CASE-A",
+   "name": "Coil casing machining supplier A (Germany)",
+   "region": "domestic",
+   "distance_km": 400,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-CASE-B",
+   "name": "Coil casing machining supplier B (Italy)",
+   "region": "regional",
+   "distance_km": 900,
+   "mode": "road",
+   "lead_factor": 1.1
+  },
+  {
+   "id": "PRX-CU",
+   "name": "Copper stabiliser and solder supplier (Germany)",
+   "region": "domestic",
+   "distance_km": 300,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-INS",
+   "name": "Insulation materials supplier (Switzerland)",
+   "region": "regional",
+   "distance_km": 500,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-CRYV",
+   "name": "Cryostat vessel fabricator (Central Europe)",
+   "region": "regional",
+   "distance_km": 700,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-CRYC",
+   "name": "Cryocooler supplier (Japan)",
+   "region": "overseas",
+   "distance_km": 9300,
+   "mode": "air"
+  },
+  {
+   "id": "PRX-SHLD",
+   "name": "Thermal shield supplier (France)",
+   "region": "regional",
+   "distance_km": 800,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-VAC",
+   "name": "Vacuum pump supplier (Germany)",
+   "region": "domestic",
+   "distance_km": 350,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-PSU-A",
+   "name": "Magnet power supply supplier A (Switzerland)",
+   "region": "regional",
+   "distance_km": 450,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-PSU-B",
+   "name": "Magnet power supply supplier B (Germany)",
+   "region": "domestic",
+   "distance_km": 500,
+   "mode": "road",
+   "lead_factor": 1.2
+  },
+  {
+   "id": "PRX-CL",
+   "name": "Current lead supplier (United Kingdom)",
+   "region": "regional",
+   "distance_km": 1100,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-QD",
+   "name": "Quench detection electronics supplier (Germany)",
+   "region": "domestic",
+   "distance_km": 200,
+   "mode": "road"
+  },
+  {
+   "id": "PRX-DAQ",
+   "name": "Instrumentation supplier (Germany)",
+   "region": "domestic",
+   "distance_km": 250,
+   "mode": "road"
+  }
+ ],
+ "items": [
+  {
+   "id": "TEST",
+   "name": "Model coil test campaign",
+   "parent": null,
+   "kind": "make",
+   "category": "process",
+   "party": "PRX-SITE",
+   "steps": [
+    [
+     "final integration",
+     20
+    ],
+    [
+     "cooldown",
+     14
+    ],
+    [
+     "cold test",
+     21
+    ],
+    [
+     "acceptance review",
+     7
+    ]
+   ],
+   "qty": 1,
+   "alts": [],
+   "order": {
+    "number": "1000100",
+    "doc_type": "Production order"
+   },
+   "lot": "LM00100",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "TEST:final integration",
+     "stage": "final integration",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 20.0
+    },
+    {
+     "id": "TEST:cooldown",
+     "stage": "cooldown",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 14.0
+    },
+    {
+     "id": "TEST:cold test",
+     "stage": "cold test",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 21.0
+    },
+    {
+     "id": "TEST:acceptance review",
+     "stage": "acceptance review",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 7.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "COIL",
+   "name": "HTS coil",
+   "parent": "TEST",
+   "kind": "make",
+   "category": "process",
+   "party": "PRX-SITE",
+   "steps": [
+    [
+     "coil winding",
+     40
+    ],
+    [
+     "soldering and impregnation",
+     15
+    ],
+    [
+     "instrumentation",
+     10
+    ],
+    [
+     "warm test",
+     7
+    ]
+   ],
+   "qty": 1,
+   "alts": [],
+   "order": {
+    "number": "1000101",
+    "doc_type": "Production order"
+   },
+   "lot": "LM00101",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S4000P",
+     "name": "Preventive maintenance",
+     "why": "Scheduled tasks and their intervals in the maintenance task analysis."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 80000,
+    "price": 2400000,
+    "per_unit": 1,
+    "repairable": true,
+    "repair_cost": 600000,
+    "tasks": [
+     {
+      "name": "Coil electrical and joint resistance check",
+      "kind": "preventive",
+      "hours": 8,
+      "skill": "Magnet engineer",
+      "equipment": [
+       "Precision ohmmeter",
+       "Data acquisition rack"
+      ],
+      "interval_h": 1500
+     },
+     {
+      "name": "Replace coil",
+      "kind": "corrective",
+      "hours": 320,
+      "skill": "Magnet engineer",
+      "equipment": [
+       "Overhead crane",
+       "Coil handling frame"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "COIL:coil winding",
+     "stage": "coil winding",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 40.0
+    },
+    {
+     "id": "COIL:soldering and impregnation",
+     "stage": "soldering and impregnation",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 15.0
+    },
+    {
+     "id": "COIL:instrumentation",
+     "stage": "instrumentation",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 10.0
+    },
+    {
+     "id": "COIL:warm test",
+     "stage": "warm test",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 7.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "HTS",
+   "name": "HTS tape (REBCO)",
+   "parent": "COIL",
+   "kind": "buy",
+   "category": "superconductor",
+   "party": "PRX-HTS-A",
+   "lead": 200,
+   "qty": 40,
+   "new": true,
+   "alts": [
+    "PRX-HTS-B"
+   ],
+   "order": {
+    "number": "4500000102",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00102",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "HTS:supplier qualification",
+     "stage": "supplier qualification",
+     "party": "PRX-HTS-A",
+     "doc": "Source determination",
+     "category": "superconductor",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 40,
+     "international": 1,
+     "planned_days": 45.0
+    },
+    {
+     "id": "HTS:order release",
+     "stage": "order release",
+     "party": "PRX-HTS-A",
+     "doc": "Purchase order",
+     "category": "superconductor",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 40,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "HTS:production",
+     "stage": "production",
+     "party": "PRX-HTS-A",
+     "doc": "Order confirmation",
+     "category": "superconductor",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 40,
+     "international": 1,
+     "planned_days": 200.0
+    },
+    {
+     "id": "HTS:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-HTS-A",
+     "doc": "Order confirmation",
+     "category": "superconductor",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 40,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "HTS:transit",
+     "stage": "transit",
+     "party": "PRX-HTS-A",
+     "doc": "Inbound delivery",
+     "category": "superconductor",
+     "mode": "air",
+     "distance_km": 9000,
+     "qty": 40,
+     "international": 1,
+     "planned_days": 4.0
+    },
+    {
+     "id": "HTS:receiving",
+     "stage": "receiving",
+     "party": "PRX-HTS-A",
+     "doc": "Goods receipt",
+     "category": "superconductor",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 40,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {
+    "PRX-HTS-B": [
+     {
+      "id": "HTS:supplier qualification",
+      "stage": "supplier qualification",
+      "party": "PRX-HTS-B",
+      "doc": "Source determination",
+      "category": "superconductor",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 40,
+      "international": 1,
+      "planned_days": 45.0
+     },
+     {
+      "id": "HTS:order release",
+      "stage": "order release",
+      "party": "PRX-HTS-B",
+      "doc": "Purchase order",
+      "category": "superconductor",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 40,
+      "international": 1,
+      "planned_days": 3.0
+     },
+     {
+      "id": "HTS:production",
+      "stage": "production",
+      "party": "PRX-HTS-B",
+      "doc": "Order confirmation",
+      "category": "superconductor",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 40,
+      "international": 1,
+      "planned_days": 230.0
+     },
+     {
+      "id": "HTS:outgoing inspection",
+      "stage": "outgoing inspection",
+      "party": "PRX-HTS-B",
+      "doc": "Order confirmation",
+      "category": "superconductor",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 40,
+      "international": 1,
+      "planned_days": 3.0
+     },
+     {
+      "id": "HTS:transit",
+      "stage": "transit",
+      "party": "PRX-HTS-B",
+      "doc": "Inbound delivery",
+      "category": "superconductor",
+      "mode": "road",
+      "distance_km": 800,
+      "qty": 40,
+      "international": 1,
+      "planned_days": 2.6
+     },
+     {
+      "id": "HTS:receiving",
+      "stage": "receiving",
+      "party": "PRX-HTS-B",
+      "doc": "Goods receipt",
+      "category": "superconductor",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 40,
+      "international": 1,
+      "planned_days": 2.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "CASE",
+   "name": "Coil casing and winding former",
+   "parent": "COIL",
+   "kind": "buy",
+   "category": "precision machining",
+   "party": "PRX-CASE-A",
+   "lead": 110,
+   "qty": 1,
+   "new": false,
+   "alts": [
+    "PRX-CASE-B"
+   ],
+   "order": {
+    "number": "4500000103",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00103",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "CASE:order release",
+     "stage": "order release",
+     "party": "PRX-CASE-A",
+     "doc": "Purchase order",
+     "category": "precision machining",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CASE:production",
+     "stage": "production",
+     "party": "PRX-CASE-A",
+     "doc": "Order confirmation",
+     "category": "precision machining",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 110.0
+    },
+    {
+     "id": "CASE:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-CASE-A",
+     "doc": "Order confirmation",
+     "category": "precision machining",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CASE:transit",
+     "stage": "transit",
+     "party": "PRX-CASE-A",
+     "doc": "Inbound delivery",
+     "category": "precision machining",
+     "mode": "road",
+     "distance_km": 400,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 1.8
+    },
+    {
+     "id": "CASE:receiving",
+     "stage": "receiving",
+     "party": "PRX-CASE-A",
+     "doc": "Goods receipt",
+     "category": "precision machining",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {
+    "PRX-CASE-B": [
+     {
+      "id": "CASE:supplier qualification",
+      "stage": "supplier qualification",
+      "party": "PRX-CASE-B",
+      "doc": "Source determination",
+      "category": "precision machining",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 1,
+      "planned_days": 45.0
+     },
+     {
+      "id": "CASE:order release",
+      "stage": "order release",
+      "party": "PRX-CASE-B",
+      "doc": "Purchase order",
+      "category": "precision machining",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 1,
+      "planned_days": 3.0
+     },
+     {
+      "id": "CASE:production",
+      "stage": "production",
+      "party": "PRX-CASE-B",
+      "doc": "Order confirmation",
+      "category": "precision machining",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 1,
+      "planned_days": 121.0
+     },
+     {
+      "id": "CASE:outgoing inspection",
+      "stage": "outgoing inspection",
+      "party": "PRX-CASE-B",
+      "doc": "Order confirmation",
+      "category": "precision machining",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 1,
+      "planned_days": 3.0
+     },
+     {
+      "id": "CASE:transit",
+      "stage": "transit",
+      "party": "PRX-CASE-B",
+      "doc": "Inbound delivery",
+      "category": "precision machining",
+      "mode": "road",
+      "distance_km": 900,
+      "qty": 1,
+      "international": 1,
+      "planned_days": 2.8
+     },
+     {
+      "id": "CASE:receiving",
+      "stage": "receiving",
+      "party": "PRX-CASE-B",
+      "doc": "Goods receipt",
+      "category": "precision machining",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 1,
+      "planned_days": 2.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "CU",
+   "name": "Copper stabiliser and solder",
+   "parent": "COIL",
+   "kind": "buy",
+   "category": "metals",
+   "party": "PRX-CU",
+   "lead": 30,
+   "qty": 1,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000104",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00104",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "CU:order release",
+     "stage": "order release",
+     "party": "PRX-CU",
+     "doc": "Purchase order",
+     "category": "metals",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CU:production",
+     "stage": "production",
+     "party": "PRX-CU",
+     "doc": "Order confirmation",
+     "category": "metals",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 30.0
+    },
+    {
+     "id": "CU:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-CU",
+     "doc": "Order confirmation",
+     "category": "metals",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CU:transit",
+     "stage": "transit",
+     "party": "PRX-CU",
+     "doc": "Inbound delivery",
+     "category": "metals",
+     "mode": "road",
+     "distance_km": 300,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 1.6
+    },
+    {
+     "id": "CU:receiving",
+     "stage": "receiving",
+     "party": "PRX-CU",
+     "doc": "Goods receipt",
+     "category": "metals",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "INS",
+   "name": "Insulation materials",
+   "parent": "COIL",
+   "kind": "buy",
+   "category": "materials",
+   "party": "PRX-INS",
+   "lead": 25,
+   "qty": 1,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000105",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00105",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "INS:order release",
+     "stage": "order release",
+     "party": "PRX-INS",
+     "doc": "Purchase order",
+     "category": "materials",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "INS:production",
+     "stage": "production",
+     "party": "PRX-INS",
+     "doc": "Order confirmation",
+     "category": "materials",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 25.0
+    },
+    {
+     "id": "INS:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-INS",
+     "doc": "Order confirmation",
+     "category": "materials",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "INS:transit",
+     "stage": "transit",
+     "party": "PRX-INS",
+     "doc": "Inbound delivery",
+     "category": "materials",
+     "mode": "road",
+     "distance_km": 500,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.0
+    },
+    {
+     "id": "INS:receiving",
+     "stage": "receiving",
+     "party": "PRX-INS",
+     "doc": "Goods receipt",
+     "category": "materials",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "CRYO",
+   "name": "Cryostat assembly",
+   "parent": "TEST",
+   "kind": "make",
+   "category": "process",
+   "party": "PRX-SITE",
+   "steps": [
+    [
+     "cryostat integration",
+     15
+    ],
+    [
+     "leak test",
+     6
+    ]
+   ],
+   "qty": 1,
+   "alts": [],
+   "order": {
+    "number": "1000106",
+    "doc_type": "Production order"
+   },
+   "lot": "LM00106",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "CRYO:cryostat integration",
+     "stage": "cryostat integration",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 15.0
+    },
+    {
+     "id": "CRYO:leak test",
+     "stage": "leak test",
+     "party": "PRX-SITE",
+     "doc": "Production order",
+     "category": "process",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 6.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "CRYV",
+   "name": "Cryostat vessel",
+   "parent": "CRYO",
+   "kind": "buy",
+   "category": "vessels",
+   "party": "PRX-CRYV",
+   "lead": 120,
+   "qty": 1,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000107",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00107",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S4000P",
+     "name": "Preventive maintenance",
+     "why": "Scheduled tasks and their intervals in the maintenance task analysis."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 120000,
+    "price": 380000,
+    "per_unit": 1,
+    "repairable": true,
+    "repair_cost": 60000,
+    "tasks": [
+     {
+      "name": "Vacuum leak check",
+      "kind": "preventive",
+      "hours": 6,
+      "skill": "Vacuum technician",
+      "equipment": [
+       "Helium leak detector"
+      ],
+      "interval_h": 3000
+     },
+     {
+      "name": "Repair vessel seal",
+      "kind": "corrective",
+      "hours": 24,
+      "skill": "Vacuum technician",
+      "equipment": [
+       "Helium leak detector",
+       "Overhead crane"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "CRYV:order release",
+     "stage": "order release",
+     "party": "PRX-CRYV",
+     "doc": "Purchase order",
+     "category": "vessels",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CRYV:production",
+     "stage": "production",
+     "party": "PRX-CRYV",
+     "doc": "Order confirmation",
+     "category": "vessels",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 120.0
+    },
+    {
+     "id": "CRYV:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-CRYV",
+     "doc": "Order confirmation",
+     "category": "vessels",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CRYV:transit",
+     "stage": "transit",
+     "party": "PRX-CRYV",
+     "doc": "Inbound delivery",
+     "category": "vessels",
+     "mode": "road",
+     "distance_km": 700,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.4
+    },
+    {
+     "id": "CRYV:receiving",
+     "stage": "receiving",
+     "party": "PRX-CRYV",
+     "doc": "Goods receipt",
+     "category": "vessels",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "CRYC",
+   "name": "Cryocoolers",
+   "parent": "CRYO",
+   "kind": "buy",
+   "category": "cryogenics",
+   "party": "PRX-CRYC",
+   "lead": 150,
+   "qty": 4,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000108",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00108",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S4000P",
+     "name": "Preventive maintenance",
+     "why": "Scheduled tasks and their intervals in the maintenance task analysis."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 20000,
+    "price": 95000,
+    "per_unit": 4,
+    "repairable": true,
+    "repair_cost": 22000,
+    "tasks": [
+     {
+      "name": "Cold head maintenance",
+      "kind": "preventive",
+      "hours": 6,
+      "skill": "Cryogenics technician",
+      "equipment": [
+       "Helium charging rig"
+      ],
+      "interval_h": 10000
+     },
+     {
+      "name": "Replace cryocooler",
+      "kind": "corrective",
+      "hours": 10,
+      "skill": "Cryogenics technician",
+      "equipment": [
+       "Helium charging rig",
+       "Overhead crane"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "CRYC:order release",
+     "stage": "order release",
+     "party": "PRX-CRYC",
+     "doc": "Purchase order",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 4,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CRYC:production",
+     "stage": "production",
+     "party": "PRX-CRYC",
+     "doc": "Order confirmation",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 4,
+     "international": 1,
+     "planned_days": 150.0
+    },
+    {
+     "id": "CRYC:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-CRYC",
+     "doc": "Order confirmation",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 4,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CRYC:transit",
+     "stage": "transit",
+     "party": "PRX-CRYC",
+     "doc": "Inbound delivery",
+     "category": "cryogenics",
+     "mode": "air",
+     "distance_km": 9300,
+     "qty": 4,
+     "international": 1,
+     "planned_days": 4.0
+    },
+    {
+     "id": "CRYC:receiving",
+     "stage": "receiving",
+     "party": "PRX-CRYC",
+     "doc": "Goods receipt",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 4,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "SHLD",
+   "name": "Thermal shield and insulation",
+   "parent": "CRYO",
+   "kind": "buy",
+   "category": "cryogenics",
+   "party": "PRX-SHLD",
+   "lead": 45,
+   "qty": 1,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000109",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00109",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "In the product breakdown, but not an LSA candidate: integral to its parent."
+    }
+   ],
+   "support": {
+    "integral": true
+   },
+   "route": [
+    {
+     "id": "SHLD:order release",
+     "stage": "order release",
+     "party": "PRX-SHLD",
+     "doc": "Purchase order",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "SHLD:production",
+     "stage": "production",
+     "party": "PRX-SHLD",
+     "doc": "Order confirmation",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 45.0
+    },
+    {
+     "id": "SHLD:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-SHLD",
+     "doc": "Order confirmation",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "SHLD:transit",
+     "stage": "transit",
+     "party": "PRX-SHLD",
+     "doc": "Inbound delivery",
+     "category": "cryogenics",
+     "mode": "road",
+     "distance_km": 800,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.6
+    },
+    {
+     "id": "SHLD:receiving",
+     "stage": "receiving",
+     "party": "PRX-SHLD",
+     "doc": "Goods receipt",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "VAC",
+   "name": "Vacuum pumps",
+   "parent": "CRYO",
+   "kind": "buy",
+   "category": "vacuum",
+   "party": "PRX-VAC",
+   "lead": 60,
+   "qty": 3,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000110",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00110",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S4000P",
+     "name": "Preventive maintenance",
+     "why": "Scheduled tasks and their intervals in the maintenance task analysis."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 15000,
+    "price": 28000,
+    "per_unit": 3,
+    "repairable": true,
+    "repair_cost": 7000,
+    "tasks": [
+     {
+      "name": "Pump bearing and oil service",
+      "kind": "preventive",
+      "hours": 3,
+      "skill": "Vacuum technician",
+      "equipment": [
+       "Pump service kit"
+      ],
+      "interval_h": 8000
+     },
+     {
+      "name": "Replace vacuum pump",
+      "kind": "corrective",
+      "hours": 4,
+      "skill": "Vacuum technician",
+      "equipment": [
+       "Helium leak detector"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "VAC:order release",
+     "stage": "order release",
+     "party": "PRX-VAC",
+     "doc": "Purchase order",
+     "category": "vacuum",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 3,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "VAC:production",
+     "stage": "production",
+     "party": "PRX-VAC",
+     "doc": "Order confirmation",
+     "category": "vacuum",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 3,
+     "international": 0,
+     "planned_days": 60.0
+    },
+    {
+     "id": "VAC:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-VAC",
+     "doc": "Order confirmation",
+     "category": "vacuum",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 3,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "VAC:transit",
+     "stage": "transit",
+     "party": "PRX-VAC",
+     "doc": "Inbound delivery",
+     "category": "vacuum",
+     "mode": "road",
+     "distance_km": 350,
+     "qty": 3,
+     "international": 0,
+     "planned_days": 1.7
+    },
+    {
+     "id": "VAC:receiving",
+     "stage": "receiving",
+     "party": "PRX-VAC",
+     "doc": "Goods receipt",
+     "category": "vacuum",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 3,
+     "international": 0,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "PSU",
+   "name": "Magnet power supply",
+   "parent": "TEST",
+   "kind": "buy",
+   "category": "power electronics",
+   "party": "PRX-PSU-A",
+   "lead": 130,
+   "qty": 1,
+   "new": false,
+   "alts": [
+    "PRX-PSU-B"
+   ],
+   "order": {
+    "number": "4500000111",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00111",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S4000P",
+     "name": "Preventive maintenance",
+     "why": "Scheduled tasks and their intervals in the maintenance task analysis."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 30000,
+    "price": 260000,
+    "per_unit": 1,
+    "repairable": true,
+    "repair_cost": 35000,
+    "tasks": [
+     {
+      "name": "Power supply calibration",
+      "kind": "preventive",
+      "hours": 4,
+      "skill": "Power electronics engineer",
+      "equipment": [
+       "Current calibrator"
+      ],
+      "interval_h": 6000
+     },
+     {
+      "name": "Replace power module of supply",
+      "kind": "corrective",
+      "hours": 6,
+      "skill": "Power electronics engineer",
+      "equipment": [
+       "Current calibrator"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "PSU:order release",
+     "stage": "order release",
+     "party": "PRX-PSU-A",
+     "doc": "Purchase order",
+     "category": "power electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "PSU:production",
+     "stage": "production",
+     "party": "PRX-PSU-A",
+     "doc": "Order confirmation",
+     "category": "power electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 130.0
+    },
+    {
+     "id": "PSU:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-PSU-A",
+     "doc": "Order confirmation",
+     "category": "power electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "PSU:transit",
+     "stage": "transit",
+     "party": "PRX-PSU-A",
+     "doc": "Inbound delivery",
+     "category": "power electronics",
+     "mode": "road",
+     "distance_km": 450,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 1.9
+    },
+    {
+     "id": "PSU:receiving",
+     "stage": "receiving",
+     "party": "PRX-PSU-A",
+     "doc": "Goods receipt",
+     "category": "power electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {
+    "PRX-PSU-B": [
+     {
+      "id": "PSU:supplier qualification",
+      "stage": "supplier qualification",
+      "party": "PRX-PSU-B",
+      "doc": "Source determination",
+      "category": "power electronics",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 0,
+      "planned_days": 45.0
+     },
+     {
+      "id": "PSU:order release",
+      "stage": "order release",
+      "party": "PRX-PSU-B",
+      "doc": "Purchase order",
+      "category": "power electronics",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 0,
+      "planned_days": 3.0
+     },
+     {
+      "id": "PSU:production",
+      "stage": "production",
+      "party": "PRX-PSU-B",
+      "doc": "Order confirmation",
+      "category": "power electronics",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 0,
+      "planned_days": 156.0
+     },
+     {
+      "id": "PSU:outgoing inspection",
+      "stage": "outgoing inspection",
+      "party": "PRX-PSU-B",
+      "doc": "Order confirmation",
+      "category": "power electronics",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 0,
+      "planned_days": 3.0
+     },
+     {
+      "id": "PSU:transit",
+      "stage": "transit",
+      "party": "PRX-PSU-B",
+      "doc": "Inbound delivery",
+      "category": "power electronics",
+      "mode": "road",
+      "distance_km": 500,
+      "qty": 1,
+      "international": 0,
+      "planned_days": 2.0
+     },
+     {
+      "id": "PSU:receiving",
+      "stage": "receiving",
+      "party": "PRX-PSU-B",
+      "doc": "Goods receipt",
+      "category": "power electronics",
+      "mode": "none",
+      "distance_km": 0,
+      "qty": 1,
+      "international": 0,
+      "planned_days": 2.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "CL",
+   "name": "Current leads",
+   "parent": "TEST",
+   "kind": "buy",
+   "category": "cryogenics",
+   "party": "PRX-CL",
+   "lead": 90,
+   "qty": 2,
+   "new": true,
+   "alts": [],
+   "order": {
+    "number": "4500000112",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00112",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 60000,
+    "price": 48000,
+    "per_unit": 2,
+    "repairable": false,
+    "tasks": [
+     {
+      "name": "Replace current lead",
+      "kind": "corrective",
+      "hours": 16,
+      "skill": "Cryogenics technician",
+      "equipment": [
+       "Overhead crane",
+       "Helium leak detector"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "CL:supplier qualification",
+     "stage": "supplier qualification",
+     "party": "PRX-CL",
+     "doc": "Source determination",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 2,
+     "international": 1,
+     "planned_days": 45.0
+    },
+    {
+     "id": "CL:order release",
+     "stage": "order release",
+     "party": "PRX-CL",
+     "doc": "Purchase order",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 2,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CL:production",
+     "stage": "production",
+     "party": "PRX-CL",
+     "doc": "Order confirmation",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 2,
+     "international": 1,
+     "planned_days": 90.0
+    },
+    {
+     "id": "CL:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-CL",
+     "doc": "Order confirmation",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 2,
+     "international": 1,
+     "planned_days": 3.0
+    },
+    {
+     "id": "CL:transit",
+     "stage": "transit",
+     "party": "PRX-CL",
+     "doc": "Inbound delivery",
+     "category": "cryogenics",
+     "mode": "road",
+     "distance_km": 1100,
+     "qty": 2,
+     "international": 1,
+     "planned_days": 3.2
+    },
+    {
+     "id": "CL:receiving",
+     "stage": "receiving",
+     "party": "PRX-CL",
+     "doc": "Goods receipt",
+     "category": "cryogenics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 2,
+     "international": 1,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "QD",
+   "name": "Quench detection electronics",
+   "parent": "TEST",
+   "kind": "buy",
+   "category": "electronics",
+   "party": "PRX-QD",
+   "lead": 75,
+   "qty": 1,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000113",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00113",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S4000P",
+     "name": "Preventive maintenance",
+     "why": "Scheduled tasks and their intervals in the maintenance task analysis."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 40000,
+    "price": 32000,
+    "per_unit": 1,
+    "repairable": true,
+    "repair_cost": 6000,
+    "tasks": [
+     {
+      "name": "Quench detection functional test",
+      "kind": "preventive",
+      "hours": 2,
+      "skill": "Power electronics engineer",
+      "equipment": [
+       "Signal simulator"
+      ],
+      "interval_h": 1500
+     },
+     {
+      "name": "Replace detection board",
+      "kind": "corrective",
+      "hours": 2,
+      "skill": "Power electronics engineer",
+      "equipment": [
+       "Signal simulator"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "QD:order release",
+     "stage": "order release",
+     "party": "PRX-QD",
+     "doc": "Purchase order",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "QD:production",
+     "stage": "production",
+     "party": "PRX-QD",
+     "doc": "Order confirmation",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 75.0
+    },
+    {
+     "id": "QD:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-QD",
+     "doc": "Order confirmation",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "QD:transit",
+     "stage": "transit",
+     "party": "PRX-QD",
+     "doc": "Inbound delivery",
+     "category": "electronics",
+     "mode": "road",
+     "distance_km": 200,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 1.4
+    },
+    {
+     "id": "QD:receiving",
+     "stage": "receiving",
+     "party": "PRX-QD",
+     "doc": "Goods receipt",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  },
+  {
+   "id": "DAQ",
+   "name": "Instrumentation and data acquisition",
+   "parent": "TEST",
+   "kind": "buy",
+   "category": "electronics",
+   "party": "PRX-DAQ",
+   "lead": 40,
+   "qty": 1,
+   "new": false,
+   "alts": [],
+   "order": {
+    "number": "4500000114",
+    "doc_type": "Purchase order"
+   },
+   "lot": "LP00114",
+   "standards": [
+    {
+     "family": "S-Series",
+     "code": "S3000L",
+     "name": "Logistic support analysis (LSA)",
+     "why": "Product breakdown with candidate selection, repair policy and maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S2000M",
+     "name": "Material management",
+     "why": "Initial provisioning: recommended spares, sized by the twin's own resupply lead times."
+    },
+    {
+     "family": "S-Series",
+     "code": "S5000F",
+     "name": "In-service data feedback",
+     "why": "Observed failures update predicted reliability and re-size spares."
+    },
+    {
+     "family": "S-Series",
+     "code": "S6000T",
+     "name": "Training analysis and design",
+     "why": "Skills and annual hours derived from maintenance tasks."
+    },
+    {
+     "family": "S-Series",
+     "code": "S1000D",
+     "name": "Technical publications",
+     "why": "Count of maintenance procedures that need to be written."
+    }
+   ],
+   "support": {
+    "mtbf_h": 25000,
+    "price": 54000,
+    "per_unit": 1,
+    "repairable": false,
+    "tasks": [
+     {
+      "name": "Replace acquisition module",
+      "kind": "corrective",
+      "hours": 1.5,
+      "skill": "Instrumentation engineer",
+      "equipment": [
+       "Signal simulator"
+      ],
+      "interval_h": null
+     }
+    ]
+   },
+   "route": [
+    {
+     "id": "DAQ:order release",
+     "stage": "order release",
+     "party": "PRX-DAQ",
+     "doc": "Purchase order",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "DAQ:production",
+     "stage": "production",
+     "party": "PRX-DAQ",
+     "doc": "Order confirmation",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 40.0
+    },
+    {
+     "id": "DAQ:outgoing inspection",
+     "stage": "outgoing inspection",
+     "party": "PRX-DAQ",
+     "doc": "Order confirmation",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 3.0
+    },
+    {
+     "id": "DAQ:transit",
+     "stage": "transit",
+     "party": "PRX-DAQ",
+     "doc": "Inbound delivery",
+     "category": "electronics",
+     "mode": "road",
+     "distance_km": 250,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 1.5
+    },
+    {
+     "id": "DAQ:receiving",
+     "stage": "receiving",
+     "party": "PRX-DAQ",
+     "doc": "Goods receipt",
+     "category": "electronics",
+     "mode": "none",
+     "distance_km": 0,
+     "qty": 1,
+     "international": 0,
+     "planned_days": 2.0
+    }
+   ],
+   "variants": {}
+  }
+ ],
+ "scenarios": [
+  {
+   "name": "HTS tape production slips 8 weeks",
+   "delays": {
+    "HTS:production": 56
+   }
+  },
+  {
+   "name": "HTS supplier A fails qualification on day 45; switch to supplier B",
+   "switch": {
+    "HTS": {
+     "party": "PRX-HTS-B",
+     "from_day": 45
+    }
+   }
+  },
+  {
+   "name": "Cryocooler production slips 6 weeks",
+   "delays": {
+    "CRYC:production": 42
+   }
+  },
+  {
+   "name": "Coil winding reported at double the planned time",
+   "done": {
+    "COIL:coil winding": 80
+   }
+  }
+ ],
+ "service": {
+  "what": "One model coil test stand in operation",
+  "fleet": 1,
+  "hours_per_year": 3000,
+  "observed_years": 3.0,
+  "fill_target": 0.95,
+  "labour_rate": 110
+ },
+ "feedback": {
+  "COIL": {
+   "hours": 9000.0,
+   "failures": 0
+  },
+  "CRYV": {
+   "hours": 9000.0,
+   "failures": 0
+  },
+  "CRYC": {
+   "hours": 36000.0,
+   "failures": 4
+  },
+  "VAC": {
+   "hours": 27000.0,
+   "failures": 4
+  },
+  "PSU": {
+   "hours": 9000.0,
+   "failures": 0
+  },
+  "CL": {
+   "hours": 18000.0,
+   "failures": 0
+  },
+  "QD": {
+   "hours": 9000.0,
+   "failures": 0
+  },
+  "DAQ": {
+   "hours": 9000.0,
+   "failures": 1
+  }
+ },
+ "truth": {
+  "p50": 571.8,
+  "p80": 693.3,
+  "p95": 844.3
+ }
+}
